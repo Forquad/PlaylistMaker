@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="menu_background">
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <style name="menu_bnt_style">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/menu_btn_icon_padding</item>
+        <item name="iconTint">@color/black</item>
+        <item name="cornerRadius">@dimen/menu_btn_corner_radius</item>
+    </style>
+
+    <style name="background_color">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="back_arrow_color">
+        <item name="android:tint">@color/black</item>
+    </style>
+
+    <style name="title_text_style">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="settings_fl_list">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="normal_text_style">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/normal_text_size</item>
+</style>
+
+    <style name="settings_switch_color">
+        <item name="android:trackTint">@color/text_gray</item>
+        <item name="android:thumbTint">@color/text_gray</item>
+    </style>
+
+    <style name="settings_icon_color">
+        <item name="android:tint">@color/text_gray</item>
+    </style>
+</resources>

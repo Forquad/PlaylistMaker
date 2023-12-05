@@ -33,9 +33,7 @@
             android:layout_marginBottom="16dp"
             android:layout_weight="1"
             android:text="@string/search"
-            app:icon="@drawable/ic_search"
-            tools:ignore="VisualLintButtonSize"
-            android:foreground="?attr/selectableItemBackground"/>
+            app:icon="@drawable/ic_search"/>
 
         <Button
             android:id="@+id/media_btn"
@@ -45,9 +43,7 @@
             android:layout_marginBottom="16dp"
             android:layout_weight="1"
             android:text="@string/media"
-            app:icon="@drawable/ic_media"
-            tools:ignore="VisualLintButtonSize"
-            android:foreground="?attr/selectableItemBackground"/>
+            app:icon="@drawable/ic_media"/>
 
         <Button
             android:id="@+id/settings_btn"
@@ -57,9 +53,7 @@
             android:layout_marginBottom="16dp"
             android:layout_weight="1"
             android:text="@string/settings"
-            app:icon="@drawable/ic_settings"
-            tools:ignore="VisualLintButtonSize"
-            android:foreground="?attr/selectableItemBackground"/>
+            app:icon="@drawable/ic_settings"/>
 
     </LinearLayout>
 

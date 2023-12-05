@@ -11,5 +11,5 @@
     <dimen name="corner_radius">8dp</dimen>
     <dimen name="views_between_distance">8dp</dimen>
     <dimen name="margin_top">24dp</dimen>
-    <dimen name="normal_text_size">19sp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
 </resources>

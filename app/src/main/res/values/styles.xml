@@ -8,8 +8,8 @@
         <item name="android:backgroundTint">@color/white</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">@dimen/title_text_size</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+        <item name="android:letterSpacing">0</item>
         <item name="iconGravity">textStart</item>
         <item name="iconPadding">@dimen/menu_btn_icon_padding</item>
         <item name="iconTint">@color/black</item>
@@ -25,7 +25,7 @@
     </style>
 
     <style name="title_text_style">
-        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">1</item>

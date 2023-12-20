@@ -23,6 +23,8 @@ class SearchActivity : AppCompatActivity() {
             finish()
         }
 
+
+
         clearButton.setOnClickListener {
             inputEditText.setText("")
 

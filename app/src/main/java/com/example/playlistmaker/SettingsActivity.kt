@@ -21,6 +21,7 @@ class SettingsActivity: AppCompatActivity() {
             finish()
         }
 
+
         shareAppBtn.setOnClickListener{
             val url = "https://practicum.yandex.ru/android-developer/?from=catalog"
             val intent = Intent(Intent.ACTION_SEND)

@@ -29,6 +29,7 @@
         <item name="android:backgroundTint">@color/yp_light_gray</item>
     </style>
 
+
     <style name="search_field_icon_style">
         <item name="tint">@color/yp_text_gray</item>
     </style>

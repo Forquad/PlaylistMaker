@@ -11,6 +11,10 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class SearchActivity : AppCompatActivity() {
+    companion object {
+        const val EDIT_TEXT_DATA = "EDIT_TEXT_DATA"
+        var editTextData = ""
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
@@ -23,8 +27,6 @@ class SearchActivity : AppCompatActivity() {
         backArrowBtn.setOnClickListener{
             finish()
         }
-
-
 
         clearButton.setOnClickListener {
             inputEditText.setText("")
@@ -49,7 +51,15 @@ class SearchActivity : AppCompatActivity() {
 
         inputEditText.addTextChangedListener(simpleTextWatcher)
 
+    }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(EDIT_TEXT_DATA, editTextData)
+    }
 
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        editTextData = savedInstanceState.getString(EDIT_TEXT_DATA, "")
     }
     private fun clearButtonVisibility(s: CharSequence?): Int {
         return if (s.isNullOrEmpty()) {

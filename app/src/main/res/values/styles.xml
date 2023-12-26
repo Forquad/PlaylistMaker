@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="menu_bnt_style" parent="Widget.MaterialComponents.Button">
+    <style name="menu_bnt_style" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="android:backgroundTint">@color/yp_white</item>
         <item name="android:fontFamily">@font/ys_display_regular</item>
         <item name="android:foreground">?attr/selectableItemBackground</item>
-        <item name="android:letterSpacing">0.04</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/yp_black</item>
         <item name="android:textSize">@dimen/normal_text_size</item>
@@ -35,16 +34,20 @@
     </style>
 
     <style name="search_edit_text_style">
+        <item name="tint">@color/yp_text_gray</item>
         <item name="android:fontFamily">@font/ys_display_regular</item>
         <item name="android:hint">@string/search</item>
         <item name="android:inputType">text</item>
         <item name="android:maxLines">1</item>
         <item name="android:textColorHint">@color/yp_text_gray</item>
         <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+        <item name="android:drawableStart">@drawable/ic_search</item>
+        <item name="android:drawableTint">@color/yp_text_gray</item>
         <item name="android:textSize">@dimen/little_text_size</item>
         <item name="backgroundTint">@color/transparent</item>
         <item name="android:textColor">@color/yp_black</item>
     </style>
+
     <style name="settings_tv_list">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

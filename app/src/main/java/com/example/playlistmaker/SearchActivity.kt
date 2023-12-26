@@ -19,7 +19,6 @@ class SearchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
-
         val backArrowBtn = findViewById<ImageView>(R.id.iv_back_arrow_btn)
         val clearButton = findViewById<ImageView>(R.id.clear_iv)
 
@@ -46,6 +45,7 @@ class SearchActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 clearButton.visibility = clearButtonVisibility(s)
+                editTextData = s.toString()
             }
 
             override fun afterTextChanged(s: Editable?) {

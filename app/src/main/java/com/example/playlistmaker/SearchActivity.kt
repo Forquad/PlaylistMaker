@@ -22,7 +22,9 @@ class SearchActivity : AppCompatActivity() {
 
         val backArrowBtn = findViewById<ImageView>(R.id.iv_back_arrow_btn)
         val clearButton = findViewById<ImageView>(R.id.clear_iv)
+
         val inputEditText = findViewById<EditText>(R.id.input_et)
+        inputEditText.setText(editTextData)
 
         backArrowBtn.setOnClickListener{
             finish()
@@ -33,7 +35,9 @@ class SearchActivity : AppCompatActivity() {
 
             val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
             inputMethodManager?.hideSoftInputFromWindow(this.currentFocus?.windowToken, 0)
-        }
+
+        inputEditText.clearFocus()
+    }
 
         val simpleTextWatcher = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {

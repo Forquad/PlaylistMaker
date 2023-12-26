@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".SearchActivity">
 
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,38 +47,35 @@
         app:cardCornerRadius="@dimen/corner_radius"
         app:cardElevation="0dp">
 
-        <LinearLayout
+        <FrameLayout
+            android:id="@+id/search_frame_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingStart="16dp"
-            android:paddingEnd="8dp">
-
-            <ImageView
-                style="@style/search_field_icon_style"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="4dp"
-                android:src="@drawable/ic_search"/>
+            android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/input_et"
                 style="@style/search_edit_text_style"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingTop="13dp" />
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="@dimen/margin_horizontal"
+                android:layout_marginEnd="@dimen/margin_horizontal"
+                android:drawablePadding="8dp"
+                android:importantForAutofill="no"
+                android:textCursorDrawable="@drawable/color_cursor"/>
 
             <ImageView
                 android:id="@+id/clear_iv"
                 style="@style/search_field_icon_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
                 android:src="@drawable/baseline_clear_24"
-                android:visibility="gone" />
+                android:layout_gravity="end"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp"
+                android:padding="16dp"
+                android:visibility="gone"/>
 
-        </LinearLayout>
+        </FrameLayout>
 
     </androidx.cardview.widget.CardView>
 
